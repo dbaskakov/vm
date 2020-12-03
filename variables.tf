@@ -2,6 +2,12 @@ variable project {
   description = "project"
 }
 
+variable ports {
+  description = "ports on filewall"
+  type = list(string)
+  default = ["22"]
+}
+
 variable region {
   description = "Region"
   default     = "europe-west1"

@@ -7,7 +7,7 @@ resource "google_compute_firewall" "firewall_proxy" {
   # Какой доступ разрешить
   allow {
     protocol = "tcp"
-    ports    = ["22","2379","6443"]
+    ports    = var.ports
   }
 
   # Каким адресам разрешаем доступ
